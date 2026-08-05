@@ -1,0 +1,223 @@
+name: 🌱 Auto Commit
+
+on:
+  schedule:
+    # Setiap 4 jam sekali
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ambil semua history untuk commit count
+
+      - name: ⚙️ Configure Git
+        run: |
+          git config user.name "@prastianhdd"
+          git config user.email "prastianhd@gmail.com"
+
+      - name: 🎨 Generate Creative Content
+        id: creative
+        run: |
+          # Array pesan commit keren
+          MESSAGES=(
+            "🌅 Selamat pagi dunia! Commit pagi ini penuh semangat"
+            "🌙 Malam-malam masih work, dedication level: 100"
+            "🚀 Lagi naik roket nih, commit tanpa henti!"
+            "☕ Butuh kopi? Saya butuh commit!"
+            "🎯 Target hari ini: commit sebanyak bintang di langit"
+            "🔥 Hot commit baru aja keluar dari oven"
+            "💡 Ide datang tiba-tiba, langsung commit!"
+            "🎮 Level up! Commit lagi dan lagi"
+            "🌈 Setelah hujan pasti ada commit"
+            "⚡ Kecepatan cahaya, commit secepat kilat"
+            "🎵 DJ Commit lagi mix lagu baru nih"
+            "🍕 Pizza atau commit? Pilih dua-duanya!"
+            "🤖 Beep boop, robot sedang bekerja"
+            "🏆 Achievement unlocked: Auto Commit Master"
+            "🎨 Mario sedang painting代码"
+            "🦊 Fox said: Keep committing!"
+            "🎸 Rock on! Commit n roll!"
+            "🌿 Growing like a garden, commit by commit"
+            "⭐ Another star added to the constellation"
+            "🎯 Bullseye! Perfect commit timing"
+            "🌊 Riding the commit wave"
+            "🎪 Circus of commits never stops"
+            "🌸 Blooming with every commit"
+            "🚀 To infinity and beyond... commit!"
+            "🎭 The show must go on... commit on!"
+            "🌈 After every push, there's a rainbow"
+            "⚡ Lightning fast commits"
+            "🎵 Composing commits like music"
+            "🍕 One more commit, one more slice"
+            "🤖 01001000 01101001 (Hi in binary)"
+          )
+
+          # Array emoji random
+          EMOJIS=("🎮" "🚀" "🌟" "🎯" "🔥" "💡" "🎨" "🎵" "🍕" "🤖" "🦊" "🎸" "🌿" "⭐" "🌊" "🎪" "🌸" "🎭" "⚡" "🏆")
+
+          # Array topik random
+          TOPICS=(
+            "Tentang kehidupan"
+            "Tentang kode"
+            "Tentang kopi"
+            "Tentang musik"
+            "Tentang alam"
+            "Tentang makanan"
+            "Tentang teknologi"
+            "Tentang mimpi"
+            "Tentang perjalanan"
+            "Tentang persahabatan"
+          )
+
+          # Pilih random
+          RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+          RANDOM_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]}
+          RANDOM_TOPIC=${TOPICS[$RANDOM % ${#TOPICS[@]}]}
+
+          # Generate commit count
+          COMMIT_COUNT=$(git rev-list --all --count)
+
+          # Dapatkan hari dalam bahasa Indonesia
+          DAY_OF_WEEK=$(date -u '+%A')
+          case $DAY_OF_WEEK in
+            "Monday") DAY_ID="Senin" ;;
+            "Tuesday") DAY_ID="Selasa" ;;
+            "Wednesday") DAY_ID="Rabu" ;;
+            "Thursday") DAY_ID="Kamis" ;;
+            "Friday") DAY_ID="Jumat" ;;
+            "Saturday") DAY_ID="Sabtu" ;;
+            "Sunday") DAY_ID="Minggu" ;;
+          esac
+
+          # Dapatkan waktu
+          HOUR=$(date -u '+%H')
+          if [ $HOUR -lt 12 ]; then
+            TIME_GREETING="Pagi"
+          elif [ $HOUR -lt 17 ]; then
+            TIME_GREETING="Siang"
+          elif [ $HOUR -lt 21 ]; then
+            TIME_GREETING="Sore"
+          else
+            TIME_GREETING="Malam"
+          fi
+
+          # Output
+          echo "message=${RANDOM_MSG}" >> $GITHUB_OUTPUT
+          echo "emoji=${RANDOM_EMOJI}" >> $GITHUB_OUTPUT
+          echo "topic=${RANDOM_TOPIC}" >> $GITHUB_OUTPUT
+          echo "count=${COMMIT_COUNT}" >> $GITHUB_OUTPUT
+          echo "day=${DAY_ID}" >> $GITHUB_OUTPUT
+          echo "greeting=${TIME_GREETING}" >> $GITHUB_OUTPUT
+
+      - name: 📊 Update Stats
+        run: |
+          # Buat direktori stats jika belum ada
+          mkdir -p stats
+
+          # Baca commit count sebelumnya atau mulai dari 0
+          if [ -f stats/commit-count.txt ]; then
+            PREV_COUNT=$(cat stats/commit-count.txt)
+          else
+            PREV_COUNT=0
+          fi
+
+          NEW_COUNT=$((PREV_COUNT + 1))
+
+          # Simpan commit count
+          echo "${NEW_COUNT}" > stats/commit-count.txt
+
+          # Generate stats file
+          cat > stats/latest-commit.md << EOF
+          # 📊 Commit Stats
+
+          | Info | Detail |
+          |------|--------|
+          | **Total Commits** | ${NEW_COUNT} |
+          | **Hari** | ${{ steps.creative.outputs.day }} |
+          | **Waktu** | ${{ steps.creative.outputs.greeting }} |
+          | **Topik** | ${{ steps.creative.outputs.topic }} |
+          | **Emoji** | ${{ steps.creative.outputs.emoji }} |
+
+          ---
+
+          ## 💬 Pesan Terakhir
+
+          > ${{ steps.creative.outputs.message }}
+
+          ---
+
+          _Diperbarui otomatis oleh GitHub Actions_ 🤖
+          EOF
+
+          # Generate fun fact random
+          FUN_FACTS=(
+            "💡 Fakta: Commit pertama di GitHub terjadi pada tahun 2008"
+            "🐙 GitHub memiliki lebih dari 100 juta developer"
+            "🌍 Developer paling aktif berasal dari Amerika Serikat"
+            "📝 Rata-rata developer menulis 50-100 baris kode per hari"
+            "⏰ Waktu terbaik untuk coding: tengah malam!"
+            "☕ Developer minum rata-rata 3 gelas kopi per hari"
+            "🎯 1 commit per jam = produktif!"
+            "🌟 Setiap commit membuat dunia lebih baik"
+            "🚀 Speed run: 100 commits dalam 24 jam"
+            "🎮 Gaming dan coding = combo sempurna"
+          )
+
+          RANDOM_FACT=${FUN_FACTS[$RANDOM % ${#FUN_FACTS[@]}]}
+          echo "${RANDOM_FACT}" >> stats/fun-facts.txt
+
+      - name: 💾 Commit and Push
+        run: |
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+
+          # Cek perubahan
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "${{ steps.creative.outputs.emoji }} ${{ steps.creative.outputs.message }}
+
+          ⏰ Waktu: ${TIMESTAMP}
+          📅 Hari: ${{ steps.creative.outputs.day }} ${{ steps.creative.outputs.greeting }}
+          🎯 Topik: ${{ steps.creative.outputs.topic }}
+          📊 Commit ke-${{ steps.creative.outputs.count }}
+
+          _Auto committed by @prastianhdd_ 🤖"
+            git push
+            echo "✅ Commit berhasil!"
+          else
+            # Force commit dengan update stats
+            git add .
+            git commit -m "${{ steps.creative.outputs.emoji }} ${{ steps.creative.outputs.message }}
+
+          ⏰ Waktu: ${TIMESTAMP}
+          📅 Hari: ${{ steps.creative.outputs.day }} ${{ steps.creative.outputs.greeting }}
+          🎯 Topik: ${{ steps.creative.outputs.topic }}
+          📊 Commit ke-${{ steps.creative.outputs.count }}
+
+          _Auto committed by @prastianhdd_ 🤖"
+            git push
+            echo "✅ Commit berhasil (stats update)!"
+          fi
+
+      - name: 🎉 Summary
+        run: |
+          echo "=========================================="
+          echo "🌱 AUTO COMMIT BERHASIL!"
+          echo "=========================================="
+          echo "💬 Pesan: ${{ steps.creative.outputs.message }}"
+          echo "🎨 Emoji: ${{ steps.creative.outputs.emoji }}"
+          echo "📊 Total Commit: ${{ steps.creative.outputs.count }}"
+          echo "📅 Hari: ${{ steps.creative.outputs.day }}"
+          echo "⏰ Waktu: ${{ steps.creative.outputs.greeting }}"
+          echo "🎯 Topik: ${{ steps.creative.outputs.topic }}"
+          echo "=========================================="
+          echo "🚀 Sampai jumpa di commit berikutnya!"
+          echo "=========================================="
