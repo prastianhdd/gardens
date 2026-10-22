@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 7 |
-| **Hari** | Rabu |
-| **Waktu** | Malam |
-| **Topik** | Tentang teknologi |
-| **Emoji** | 🌊 |
+| **Total Commits** | 8 |
+| **Hari** | Kamis |
+| **Waktu** | Pagi |
+| **Topik** | Tentang alam |
+| **Emoji** | 🏆 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🍕 Pizza atau commit? Pilih dua-duanya!
+> 🚀 Lagi naik roket nih, commit tanpa henti!
 
 ---
 
