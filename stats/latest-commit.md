@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 11 |
-| **Hari** | Kamis |
-| **Waktu** | Malam |
-| **Topik** | Tentang persahabatan |
-| **Emoji** | 🍕 |
+| **Total Commits** | 12 |
+| **Hari** | Jumat |
+| **Waktu** | Pagi |
+| **Topik** | Tentang alam |
+| **Emoji** | 🎵 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🌊 Riding the commit wave
+> 🌈 Setelah hujan pasti ada commit
 
 ---
 
