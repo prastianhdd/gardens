@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 24 |
+| **Total Commits** | 25 |
 | **Hari** | Minggu |
-| **Waktu** | Sore |
-| **Topik** | Tentang makanan |
-| **Emoji** | 🎭 |
+| **Waktu** | Malam |
+| **Topik** | Tentang musik |
+| **Emoji** | 🌿 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🌸 Blooming with every commit
+> 🎵 DJ Commit lagi mix lagu baru nih
 
 ---
 
