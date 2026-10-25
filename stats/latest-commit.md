@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 22 |
+| **Total Commits** | 23 |
 | **Hari** | Minggu |
-| **Waktu** | Pagi |
-| **Topik** | Tentang musik |
-| **Emoji** | ⚡ |
+| **Waktu** | Siang |
+| **Topik** | Tentang kopi |
+| **Emoji** | 🎨 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🌿 Growing like a garden, commit by commit
+> 🌅 Selamat pagi dunia! Commit pagi ini penuh semangat
 
 ---
 
