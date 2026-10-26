@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 25 |
-| **Hari** | Minggu |
-| **Waktu** | Malam |
-| **Topik** | Tentang musik |
-| **Emoji** | 🌿 |
+| **Total Commits** | 26 |
+| **Hari** | Senin |
+| **Waktu** | Pagi |
+| **Topik** | Tentang kehidupan |
+| **Emoji** | 🎭 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🎵 DJ Commit lagi mix lagu baru nih
+> 🎮 Level up! Commit lagi dan lagi
 
 ---
 
