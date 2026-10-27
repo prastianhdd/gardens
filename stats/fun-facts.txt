@@ -30,3 +30,4 @@
 💡 Fakta: Commit pertama di GitHub terjadi pada tahun 2008
 🌟 Setiap commit membuat dunia lebih baik
 ☕ Developer minum rata-rata 3 gelas kopi per hari
+🌍 Developer paling aktif berasal dari Amerika Serikat
