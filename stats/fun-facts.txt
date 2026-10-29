@@ -35,3 +35,4 @@
 ⏰ Waktu terbaik untuk coding: tengah malam!
 📝 Rata-rata developer menulis 50-100 baris kode per hari
 🌍 Developer paling aktif berasal dari Amerika Serikat
+🐙 GitHub memiliki lebih dari 100 juta developer
