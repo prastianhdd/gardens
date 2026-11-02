@@ -51,3 +51,4 @@
 ⏰ Waktu terbaik untuk coding: tengah malam!
 ☕ Developer minum rata-rata 3 gelas kopi per hari
 📝 Rata-rata developer menulis 50-100 baris kode per hari
+💡 Fakta: Commit pertama di GitHub terjadi pada tahun 2008
