@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 75 |
+| **Total Commits** | 76 |
 | **Hari** | Minggu |
-| **Waktu** | Sore |
-| **Topik** | Tentang alam |
-| **Emoji** | ⚡ |
+| **Waktu** | Malam |
+| **Topik** | Tentang makanan |
+| **Emoji** | 🎵 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🍕 One more commit, one more slice
+> 🔥 Hot commit baru aja keluar dari oven
 
 ---
 
