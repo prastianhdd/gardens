@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 82 |
-| **Hari** | Selasa |
-| **Waktu** | Malam |
-| **Topik** | Tentang kehidupan |
-| **Emoji** | 🎵 |
+| **Total Commits** | 83 |
+| **Hari** | Rabu |
+| **Waktu** | Pagi |
+| **Topik** | Tentang kode |
+| **Emoji** | 💡 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🎵 DJ Commit lagi mix lagu baru nih
+> 🌿 Growing like a garden, commit by commit
 
 ---
 
