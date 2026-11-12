@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 85 |
-| **Hari** | Rabu |
-| **Waktu** | Sore |
-| **Topik** | Tentang persahabatan |
-| **Emoji** | 🌿 |
+| **Total Commits** | 86 |
+| **Hari** | Kamis |
+| **Waktu** | Pagi |
+| **Topik** | Tentang musik |
+| **Emoji** | 💡 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> ⚡ Lightning fast commits
+> 🎯 Target hari ini: commit sebanyak bintang di langit
 
 ---
 
