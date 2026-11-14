@@ -91,3 +91,4 @@
 💡 Fakta: Commit pertama di GitHub terjadi pada tahun 2008
 🐙 GitHub memiliki lebih dari 100 juta developer
 📝 Rata-rata developer menulis 50-100 baris kode per hari
+🐙 GitHub memiliki lebih dari 100 juta developer
