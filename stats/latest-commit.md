@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 94 |
-| **Hari** | Sabtu |
-| **Waktu** | Sore |
-| **Topik** | Tentang musik |
-| **Emoji** | 🎭 |
+| **Total Commits** | 95 |
+| **Hari** | Minggu |
+| **Waktu** | Pagi |
+| **Topik** | Tentang teknologi |
+| **Emoji** | 🎵 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🎵 Composing commits like music
+> 🎯 Target hari ini: commit sebanyak bintang di langit
 
 ---
 
