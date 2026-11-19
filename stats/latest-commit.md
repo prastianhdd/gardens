@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 104 |
-| **Hari** | Rabu |
-| **Waktu** | Siang |
-| **Topik** | Tentang kode |
-| **Emoji** | 🎵 |
+| **Total Commits** | 105 |
+| **Hari** | Kamis |
+| **Waktu** | Pagi |
+| **Topik** | Tentang perjalanan |
+| **Emoji** | 🎯 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> ⚡ Kecepatan cahaya, commit secepat kilat
+> 🎯 Target hari ini: commit sebanyak bintang di langit
 
 ---
 
