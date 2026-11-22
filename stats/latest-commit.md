@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 114 |
+| **Total Commits** | 115 |
 | **Hari** | Minggu |
-| **Waktu** | Pagi |
-| **Topik** | Tentang kehidupan |
-| **Emoji** | ⚡ |
+| **Waktu** | Siang |
+| **Topik** | Tentang musik |
+| **Emoji** | 🚀 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🌙 Malam-malam masih work, dedication level: 100
+> 🌸 Blooming with every commit
 
 ---
 
