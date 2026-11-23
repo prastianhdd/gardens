@@ -2,17 +2,17 @@
 
 | Info | Detail |
 |------|--------|
-| **Total Commits** | 116 |
-| **Hari** | Minggu |
-| **Waktu** | Malam |
-| **Topik** | Tentang kode |
-| **Emoji** | 🎭 |
+| **Total Commits** | 117 |
+| **Hari** | Senin |
+| **Waktu** | Pagi |
+| **Topik** | Tentang makanan |
+| **Emoji** | 🎨 |
 
 ---
 
 ## 💬 Pesan Terakhir
 
-> 🌿 Growing like a garden, commit by commit
+> 🎵 Composing commits like music
 
 ---
 

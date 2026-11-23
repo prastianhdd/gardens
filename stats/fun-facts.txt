@@ -114,3 +114,4 @@
 🐙 GitHub memiliki lebih dari 100 juta developer
 🌍 Developer paling aktif berasal dari Amerika Serikat
 🐙 GitHub memiliki lebih dari 100 juta developer
+💡 Fakta: Commit pertama di GitHub terjadi pada tahun 2008
